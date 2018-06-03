@@ -7,5 +7,6 @@
 #endif
 
 class VDEC_API VDEC {
+public:
     const char *test();
 };
