@@ -16,8 +16,8 @@ link_directories (${CMAKE_CURRENT_SOURCE_DIR}/prebuilt/ffmpeg/lib/${PLATFORM})
 
 # Header and source files
 file (GLOB HEADER_FILES "include/vdec/*.h")
-file (GLOB HEADER_FILES "src/*.h")
-aux_source_directory ("src" SOURCE_FILES)
+file (GLOB HEADER_FILES "src/vdec/*.h")
+aux_source_directory ("src/vdec" SOURCE_FILES)
 
 # Build as SHARED library
 add_library (${PROJECT_NAME} SHARED ${SOURCE_FILES} ${HEADER_FILES})
