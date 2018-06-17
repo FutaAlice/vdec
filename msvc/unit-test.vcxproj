@@ -135,12 +135,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\unit-test\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="vdec.vcxproj">
       <Project>{caf320f5-9b92-4912-b861-9703d52cc5d3}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\test\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
