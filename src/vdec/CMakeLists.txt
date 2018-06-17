@@ -18,7 +18,9 @@ file (GLOB HEADER_FILES ./*.h)
 aux_source_directory ("." SOURCE_FILES)
 
 # Build as SHARED library
-add_definitions (-DVDEC_EXPORTS)
+if (WIN32)
+    add_definitions (-DVDEC_EXPORTS)
+endif ()
 add_library (${PROJECT_NAME} SHARED ${SOURCE_FILES} ${HEADER_FILES})
 
 # Set include directory
