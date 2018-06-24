@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     VDEC dec;
-    cout << dec.test();
+    cout << dec.getConfiguration();
 
     getchar();
 }
